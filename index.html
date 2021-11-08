@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/cronometro.js"></script>
     <title>Relógio Digital</title>
 </head>
 <body>
-    <div class="relogio">
-        <div class="display">
-            <div class="hora">00:00:00</div>
-            <div class="data"></div>
+    <div class="container">
+        <div class="cronometro">
+            <div id="number">00:00:00</div>
+            <div class="botoes">
+                <button onclick="iniciar()" class="iniciar">Iniciar</button>
+                <button onclick="pause()" class="pausar">Pausar</button>
+                <button onclick="zerar()" class="zerar">Zerar</button>
+            </div>
         </div>
-        <footer>
-            <p>Criado por Daniel Serrão</p>
-            <a href="https://github.com/daniiserrao">GitHub</a>
-            <a href="https://www.linkedin.com/in/daniel-serr%C3%A3o-2b76071a5/">LinkedIn</a>
-        </footer>
+        <div class="relogio">
+            <div class="hora">00:00:00</div>
+            <div class="data">01/01/2001</div>
+        </div>
+        <div class="timer">
+            <h1>Timer</h1>
+            <div class="seletores">
+                <div class="minutos">
+                    <h2>Minutos</h2>
+                    <select name="Minutos" id="minutos"></select>
+                </div>
+                <div class="segundos">
+                    <h2>Segundos</h2>
+                    <select name="Segundos" id="seconds"></select>
+                </div>
+            </div>
+            <button id="comecar">Começar</button>
+            <div class="display">00:00</div>
+        </div>
     </div>
+    <footer>
+        <p>Criado por Daniel Serrão</p>
+        <a href="https://github.com/daniiserrao">GitHub</a>
+        <a href="https://www.linkedin.com/in/daniel-serr%C3%A3o-2b76071a5/">LinkedIn</a>
+    </footer>
 </body>
 </html>
