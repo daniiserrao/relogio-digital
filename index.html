@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/script.js"></script>
-    <script src="/js/cronometro.js"></script>
     <title>Relógio Digital</title>
 </head>
 <body>
     <div class="container">
         <div class="cronometro">
+            <h2>Cronômetro</h2>
             <div id="number">00:00:00</div>
             <div class="botoes">
                 <button onclick="iniciar()" class="iniciar">Iniciar</button>
@@ -20,29 +19,33 @@
             </div>
         </div>
         <div class="relogio">
+            <h2>Relógio</h2>
             <div class="hora">00:00:00</div>
             <div class="data">01/01/2001</div>
         </div>
         <div class="timer">
-            <h1>Timer</h1>
+            <h2>Timer</h2>
             <div class="seletores">
                 <div class="minutos">
-                    <h2>Minutos</h2>
-                    <select name="Minutos" id="minutos"></select>
+                    <h3>Minutos</h3>
+                    <select id="minutes" name="Minutos"></select>
                 </div>
                 <div class="segundos">
-                    <h2>Segundos</h2>
-                    <select name="Segundos" id="seconds"></select>
+                    <h3>Segundos</h3>
+                    <select id="seconds" name="Segundos"></select>
                 </div>
             </div>
             <button id="comecar">Começar</button>
-            <div class="display">00:00</div>
+            <div id="display">00:00</div>
         </div>
     </div>
     <footer>
-        <p>Criado por Daniel Serrão</p>
+        <p>Daniel Serrão</p>
         <a href="https://github.com/daniiserrao">GitHub</a>
         <a href="https://www.linkedin.com/in/daniel-serr%C3%A3o-2b76071a5/">LinkedIn</a>
     </footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/cronometro.js"></script>
+    <script src="/js/timer.js"></script>
 </body>
 </html>
