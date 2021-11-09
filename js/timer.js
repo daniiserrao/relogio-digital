@@ -35,7 +35,7 @@ comecar.addEventListener('click', function(){
 
     interval = setInterval (function(){
         segundoAtual--
-        if (segundoAtual <= 0) {
+        if (segundoAtual < 0) {
             if (minutoAtual > 0) {
                 minutoAtual--
                 segundoAtual = 59;
